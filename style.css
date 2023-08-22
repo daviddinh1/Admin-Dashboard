@@ -1,0 +1,80 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: Helvetica;
+ list-style-type: none;
+}
+
+
+.container{
+ display: grid;
+ grid-template-columns: 1fr 4fr;
+}
+
+.header{
+ background-color: white;
+ grid-column: 2/3;
+ 
+}
+
+.sidebar{ /* fix width when you add search bars */
+ background-color: black;
+ font-weight: bold;
+ color: white;
+ grid-column: 1/2;
+ grid-row: 1/3;
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ gap: 45px;
+ height: 100vh;
+}
+
+.make-white{
+ width: 40px;
+ filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
+}
+
+.imgs{
+ width: 20px;
+ filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
+}
+
+.dashboard {
+ display: flex;
+ align-items: center;
+ margin-left: 10px;
+ margin-top: 10px;
+ gap: 7px;
+}
+
+.menu1Container {
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ margin-left: 15px
+}
+
+.menu2Container {
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ margin-left: 15px;
+}
+
+.menu1 ul{
+ display: grid;
+ grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+ gap: 7px;
+}
+
+.menu2 ul{
+ display: grid;
+ grid-template-rows: 1fr 1fr 1fr;
+ gap: 7px;
+}
+
+
+.projects{
+ background-color: #d3d3d3;
+}
